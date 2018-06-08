@@ -852,7 +852,7 @@ p {
 
 h2 {
     font-size: 1.8em;
-    font-weight:6800;
+    font-weight: 6800;
     line-height: 1.4em;
     text-transform: uppercase
 }
@@ -880,7 +880,6 @@ h3 {
 .brand-logo {
     width: 70%;
 }
-
 
 .header-copy {
     font-size: 1.0em;
@@ -1113,12 +1112,12 @@ a {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #231F20;
+    fill: #231F20;
 }
 
 .svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
+    stroke: #4691f6;
+    stroke-width: 1;
 }
 
 .copy {
@@ -1209,7 +1208,7 @@ ul {
     margin-top: 60px;
 }
 
-.work-img{
+.work-img {
     height: auto;
     width: 100%;
 }
