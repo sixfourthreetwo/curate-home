@@ -1,0 +1,312 @@
+$blue: #004cc9;
+$blue2: #02202D;
+$red: #C85177;
+$black: #1d1d1d;
+$white: #FFFFFF;
+$grey: #AAAAAA;
+$border: #CFCFCF;
+$tag: #D1DFED;
+$yellow: #DB9B51;
+$green: #7FE596;
+
+p {
+  line-height: 24px;
+}
+
+.header-bg {
+  margin: 0 8px;
+}
+
+.header-title {
+  font-size: 2.4em;
+  font-weight: 700;
+  line-height: 1.4em;
+  color: $blue2;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: 800;
+  line-height: 1.4em;
+}
+
+.bar {
+  background: rgba(183, 218, 207, 0.25);
+  height: 10px;
+}
+
+.logo {
+  width: 28%;
+}
+
+.header-copy {
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1.8em;
+}
+
+.buffer-sm {
+  padding: 100px 0;
+}
+
+.buffer-lg {
+  padding: 200px 0;
+}
+
+.portfolio-item {
+  width: 100%;
+  height: 320px;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  height: 320px;
+  cursor: pointer;
+  color: #EFF6F3;
+  margin-left: auto;
+  margin-right: 0;
+  -webkit-transition: .3s;
+  transition: .3s ease-out;
+}
+
+.portfolio-item-title {
+  position: absolute;
+  z-index: 2;
+  margin-top: 240px;
+  font-weight: 800;
+  color: $blue2;
+  font-size: 3em;
+}
+
+.project-type {
+  position: absolute;
+  z-index: 2;
+  font-weight: 800;
+  color: $blue2;
+  margin-top: -42px;
+  opacity: 0.5;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  -webkit-transition: .3s;
+  transition: .3s ease-in;
+  box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-card:active {
+  transform: translateY(6px);
+}
+
+.push-md {
+  margin-top: 180px;
+}
+
+.push-lg {
+  margin-top: 320px;
+}
+
+/** Links **/
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.4em;
+  cursor: pointer;
+}
+
+.link-highlight {
+  display: inline-block;
+  position: relative;
+  margin: 0 -4px -8px;
+  padding: 0 4px;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 400ms;
+}
+
+.link-highlight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: $green;
+  top: 80%;
+  bottom: 1px;
+  left: 4px;
+  right: 4px;
+  transform: scale(1, 1);
+  transform-origin: center bottom;
+  transition: all 400ms;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.link-highlight:hover:before {
+  background: black;
+  transform: scale(1.2, 2.8);
+}
+
+.link-highlight:focus {
+  outline-color: rgba(0, 0, 0, 0.1);
+  outline-width: 1px;
+  outline-offset: -1px;
+}
+
+.link-highlight.link-highlight-dribble:hover:before {
+  background: #ea4c89;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-github:hover:before {
+  background: #4078c0;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-twitter:hover:before {
+  background: #1da1f2;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-instagram:hover:before {
+  background: #f56040;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-android:hover:before {
+  background: #a4c639;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-home:hover:before {
+  background: $green;
+  transition: all 400ms;
+}
+
+@media screen and (max-width: 47.9375em) {
+  .header-bg {
+    padding: 10px;
+  }
+  .portfolio-card {
+    height: 220px;
+  }
+  .portfolio-item-title {
+    margin-top: 140px;
+  }
+  .push-md {
+    margin-top: 0;
+  }
+  .logo {
+    width: 40%;
+  }
+  .buffer-sm {
+     padding: 50px 0;
+  }
+}
+
+.svg-icon {
+  width: 2em;
+  height: 2em;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-right: 12px;
+}
+
+.svg-icon:hover {
+  transform: translateY(-2px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.svg-icon:active {
+  transform: translateY(1px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.copy {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+.number {
+  font-size: 2.0em;
+  font-weight: 800;
+  color: $green;
+}
+
+.descriptor {
+  font-size: 1.0em;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+ul {
+  display: flex;
+}
+
+.granary-mockup {
+  width: 100%;
+  border: 4px solid #F1F1F1;
+  box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  padding: 12px 6px;
+  height: 220px;
+  -webkit-transition: .3s;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.07);
+}
+
+/** The Granary **/
+
+.logo-section {
+  background-color: #222427;
+  width: 100%;
+  height: auto;
+}
+
+.thegranarylogo {
+  width: 20%;
+  height: 20%;
+}
+
+.thegranary-black {
+  background-color: #222427;
+}
+
+.thegranary-yellow {
+  background-color: #FFBB05;
+}
+
+.thegranary-white {
+  background-color: #f8f8f8;
+}
+
+.grid-images {
+  width: 100%;
+  height: 100%;
+}
+
+/** Scroll **/
+
+.horizontal-in {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  overflow-x: auto;
+   -webkit-overflow-scrolling:touch;
+}
+
+.horizontal-content {
+  min-width: 100%;
+  text-align: center;
+}
+
+.down-arrow {
+  width: 4%;
+  margin-top: 60px;
+}
